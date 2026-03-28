@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BharatVoice – AI Voice Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <h1>🎙️ BharatVoice</h1>
+    <p>Your AI Voice Assistant</p>
+  </div>
+
+  <div class="container">
+
+    <div class="mic-section">
+      <div class="mic-ring" id="mic-ring">
+        <button class="mic-btn" id="mic-btn" onclick="toggleListening()">
+          🎤
+        </button>
+      </div>
+      <p class="mic-label" id="mic-label">Tap to Speak</p>
+    </div>
+
+    <div class="card" id="transcript-card">
+      <p class="label">You said:</p>
+      <p class="transcript" id="transcript">—</p>
+    </div>
+
+    <div class="card" id="response-card">
+      <p class="label">BharatVoice says:</p>
+      <p class="response" id="response">—</p>
+    </div>
+
+    <div class="history-section">
+      <p class="label">Conversation History</p>
+      <div id="history"></div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
