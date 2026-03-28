@@ -4,7 +4,7 @@ recognition.lang = 'en-IN';
 recognition.continuous = false;
 recognition.interimResults = false;
 
-const GEMINI_API_KEY = "AIzaSyBRqqn269ak8eOXUfb-Hh1_sMCBZHK5oiI";
+const GEMINI_API_KEY = "YOUR_API_KEY_HERE";
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 let isListening = false;
 let history = [];
